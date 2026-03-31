@@ -31,7 +31,7 @@ const ProductCrew = ({
           <span>02</span>MEET YOUR CREW
         </h3>
         <S.ContainerFist>
-          <div>
+          <S.BoxContent>
             <S.TextContainer>
               <h2>{title}</h2>
               <h1>{name}</h1>
@@ -46,7 +46,7 @@ const ProductCrew = ({
                 />
               ))}
             </S.LinkContainer>
-          </div>
+          </S.BoxContent>
           <S.ImgContainer>
             <img src={image} alt={name} />
           </S.ImgContainer>

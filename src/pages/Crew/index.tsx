@@ -1,6 +1,5 @@
 import Header from '../../components/Header'
 import { Background } from '../Home/styles'
-import background from '../../assets/crew/background-crew-desktop.jpg'
 import ProductListCrew from '../../components/ProductListCrew'
 import Peoples from '../../models/Peoples'
 import douglas from '../../assets/crew/image-douglas-hurley.webp'
@@ -44,7 +43,7 @@ const space: Peoples[] = [
 ]
 
 const Crew = () => (
-  <Background style={{ backgroundImage: `url(${background})` }}>
+  <Background page="crew">
     <Header />
     <ProductListCrew peoples={space} />
   </Background>

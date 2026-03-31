@@ -16,6 +16,7 @@ const ProductListTec = ({ rockets }: Props) => {
       <ul>
         {activeRocket && (
           <ProductTec
+            imageMob={activeRocket.imageMob}
             image={activeRocket.image}
             title={activeRocket.title}
             description={activeRocket.description}

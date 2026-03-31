@@ -6,6 +6,7 @@ type Rocket = {
 }
 
 type Props = {
+  imageMob: string
   image: string
   title: string
   description: string
@@ -15,6 +16,7 @@ type Props = {
 }
 
 const ProductTec = ({
+  imageMob,
   image,
   title,
   description,
@@ -47,7 +49,8 @@ const ProductTec = ({
               <p>{description}</p>
             </S.textContainer>
             <S.ImgContainer>
-              <img src={image} alt={title} />
+              <S.Img src={image} alt={title} />
+              <S.ImgMob src={imageMob} alt={title} />
             </S.ImgContainer>
           </S.CardContainer>
         </div>

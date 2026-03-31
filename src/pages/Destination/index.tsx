@@ -1,6 +1,5 @@
 import Header from '../../components/Header'
 import { Background } from '../Home/styles'
-import background from '../../assets/destination/background-destination-desktop.jpg'
 import ProductList from '../../components/ProductList'
 import Stars from '../../models/Stars'
 import moon from '../../assets/destination/image-moon.webp'
@@ -48,7 +47,7 @@ const space: Stars[] = [
 ]
 
 const Destination = () => (
-  <Background style={{ backgroundImage: `url(${background})` }}>
+  <Background page="destination">
     <Header />
     <ProductList stars={space} />
   </Background>
